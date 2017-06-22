@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:orientation="vertical"
+    tools:context="com.example.android.tourguideapp.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/activity_main_bg_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Madrid"
+            style="@style/main_title_textview" />
+
+        <TextView
+            android:text="Tour Guide App"
+            style="@style/main_subtitle_textview" />
+
+        <LinearLayout style="@style/main_categories_layout">
+
+            <LinearLayout style="@style/main_category_linearlayout">
+
+                <ImageView
+                    android:src="@drawable/category_1"
+                    style="@style/main_category_imageview" />
+
+                <TextView
+                    style="@style/main_category_textview"
+                    android:text="Info" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/main_category_linearlayout">
+
+                <ImageView
+                    android:src="@drawable/category_2"
+                    style="@style/main_category_imageview" />
+
+                <TextView
+                    style="@style/main_category_textview"
+                    android:text="Culture" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/main_category_linearlayout">
+
+                <ImageView
+                    android:src="@drawable/category_3"
+                    style="@style/main_category_imageview" />
+
+                <TextView
+                    style="@style/main_category_textview"
+                    android:text="Eating" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/main_category_linearlayout">
+
+                <ImageView
+                    android:src="@drawable/category_4"
+                    style="@style/main_category_imageview" />
+
+                <TextView
+                    style="@style/main_category_textview"
+                    android:text="Leisure" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
