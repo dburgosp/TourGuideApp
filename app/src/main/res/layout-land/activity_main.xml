@@ -3,90 +3,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#222222"
+    android:background="#000000"
     android:orientation="horizontal"
+    android:padding="2dp"
     tools:context="com.example.android.tourguideapp.MainActivity">
-
-    <ImageView
-        android:id="@+id/main_background_image"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="3"
-        android:scaleType="centerCrop"
-        android:src="@drawable/activity_main_bg_03" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
         android:layout_weight="2"
         android:gravity="center"
         android:orientation="vertical">
 
         <TextView
-            style="@style/main_title_textview"
-            android:text="Madrid" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/minMargin"
+            android:text="@string/city_name"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/mainTitleTextSize"
+            android:textStyle="bold" />
 
         <TextView
-            style="@style/main_subtitle_textview"
-            android:text="Tour Guide App" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/minMargin"
+            android:text="@string/app_name"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="@dimen/mainSubtitleTextSize" />
 
-        <LinearLayout style="@style/main_categories_layout">
-
-            <LinearLayout
-                android:id="@+id/main_info_category"
-                style="@style/main_category_linearlayout">
-
-                <ImageView
-                    style="@style/main_category_imageview"
-                    android:src="@drawable/category_1" />
-
-                <TextView
-                    style="@style/main_category_textview"
-                    android:text="Info" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/main_culture_category"
-                style="@style/main_category_linearlayout">
-
-                <ImageView
-                    style="@style/main_category_imageview"
-                    android:src="@drawable/category_2" />
-
-                <TextView
-                    style="@style/main_category_textview"
-                    android:text="Culture" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout style="@style/main_categories_layout">
-
-            <LinearLayout
-                android:id="@+id/main_food_category"
-                style="@style/main_category_linearlayout">
-
-                <ImageView
-                    style="@style/main_category_imageview"
-                    android:src="@drawable/category_3" />
-
-                <TextView
-                    style="@style/main_category_textview"
-                    android:text="Food" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/main_leisure_category"
-                style="@style/main_category_linearlayout">
-
-                <ImageView
-                    style="@style/main_category_imageview"
-                    android:src="@drawable/category_4" />
-
-                <TextView
-                    style="@style/main_category_textview"
-                    android:text="Leisure" />
-            </LinearLayout>
-        </LinearLayout>
+        <ImageView
+            android:id="@+id/main_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/activity_main_bg_01" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_info_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/backgroundColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/category_1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category_1"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mainCategoryTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_culture_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/backgroundColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/category_2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category_2"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mainCategoryTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_food_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/backgroundColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/category_3" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category_3"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mainCategoryTextSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_leisure_category"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/backgroundColor"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="fitStart"
+                android:src="@drawable/category_4" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/category_4"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mainCategoryTextSize" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
