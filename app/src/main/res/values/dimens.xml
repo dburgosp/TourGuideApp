@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="mainTitleTextSize">46sp</dimen>
+    <dimen name="mainSubtitleTextSize">20sp</dimen>
+    <dimen name="mainCategoryTextSize">12sp</dimen>
+
+    <dimen name="mainCategoryImageSize">48dp</dimen>
+    <dimen name="minMargin">8dp</dimen>
+    <dimen name="mediumMargin">16dp</dimen>
+    <dimen name="maxMargin">28dp</dimen>
+</resources>

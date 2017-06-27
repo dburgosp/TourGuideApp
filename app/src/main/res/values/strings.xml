@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tour Guide App</string>
+
+    <string name="city_name">Madrid</string>
+    <string name="category_1">Info</string>
+    <string name="category_2">Culture</string>
+    <string name="category_3">Food</string>
+    <string name="category_4">Leisure</string>
 </resources>
