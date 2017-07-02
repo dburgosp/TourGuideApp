@@ -1,6 +1,5 @@
 <resources>
-    <dimen name="mainTitleTextSize">100sp</dimen>
-    <dimen name="mainSubtitleTextSize">46sp</dimen>
-    <dimen name="mainCategoryTextSize">22sp</dimen>
-
+    <dimen name="mainTitleTextSize">72sp</dimen>
+    <dimen name="mainSubtitleTextSize">33sp</dimen>
+    <dimen name="mainCategoryTextSize">18sp</dimen>
 </resources>

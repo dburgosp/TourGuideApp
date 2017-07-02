@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.tourguideapp.LocationDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryBackgroundColor"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/location_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/content_description_main_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/location_museo_prado" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/content_description_search_icon"
+                    android:padding="@dimen/mediumMargin"
+                    android:src="@drawable/ic_search_white_24dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/location_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryBackgroundColor"
+                android:gravity="center"
+                android:padding="@dimen/mediumMargin"
+                android:text="@string/location_name_1_1"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/mainSubtitleTextSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/secondaryBackgroundColor"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/minMargin"
+                android:paddingTop="@dimen/minMargin">
+
+                <RelativeLayout
+                    android:id="@+id/goto_location_map"
+                    style="@style/location_info_relativelayout">
+
+                    <ImageView
+                        android:id="@+id/location_address_image"
+                        style="@style/location_info_icon"
+                        android:contentDescription="@string/content_description_address_icon"
+                        android:src="@drawable/ic_location_on_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/location_address"
+                        style="@style/location_info_text"
+                        android:layout_toEndOf="@id/location_address_image"
+                        android:text="@string/location_address_1_1" />
+
+                    <ImageView
+                        style="@style/location_info_icon"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/content_description_exit_icon"
+                        android:src="@drawable/ic_exit_to_app_white_24dp" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/location_info_relativelayout">
+
+                    <ImageView
+                        android:id="@+id/location_timetable_image"
+                        style="@style/location_info_icon"
+                        android:contentDescription="@string/content_description_timetable_icon"
+                        android:src="@drawable/ic_access_time_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/location_timetable"
+                        style="@style/location_info_text"
+                        android:layout_toEndOf="@id/location_timetable_image"
+                        android:text="@string/location_timetable_1_1" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/location_info_relativelayout">
+
+                    <ImageView
+                        android:id="@+id/location_contact_image"
+                        style="@style/location_info_icon"
+                        android:contentDescription="@string/content_description_contact_icon"
+                        android:src="@drawable/ic_phone_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/location_contact"
+                        style="@style/location_info_text"
+                        android:layout_toEndOf="@id/location_contact_image"
+                        android:text="@string/location_contact_1_1" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/goto_location_web"
+                    style="@style/location_info_relativelayout">
+
+                    <ImageView
+                        android:id="@+id/location_web_image"
+                        style="@style/location_info_icon"
+                        android:contentDescription="@string/content_description_web_icon"
+                        android:src="@drawable/ic_public_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/location_web"
+                        style="@style/location_info_text"
+                        android:layout_toEndOf="@id/location_web_image"
+                        android:text="@string/location_web_1_1" />
+
+                    <ImageView
+                        style="@style/location_info_icon"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/content_description_exit_icon"
+                        android:src="@drawable/ic_exit_to_app_white_24dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/location_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/primaryTextColor"
+            android:padding="@dimen/mediumMargin"
+            android:text="@string/location_description_1_1" />
+    </LinearLayout>
+</ScrollView>
