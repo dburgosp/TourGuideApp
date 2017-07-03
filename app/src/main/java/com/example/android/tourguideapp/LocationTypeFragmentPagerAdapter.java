@@ -14,12 +14,16 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class LocationTypeFragmentPagerAdapter extends FragmentPagerAdapter {
     private final int NUM_PAGES = 4;
-    private String tabTitles[] = new String[]{"Culture", "Shops", "Food", "Leisure"};
+    private String tabTitles[] = new String[NUM_PAGES];
     private Context context;
 
-    public LocationTypeFragmentPagerAdapter(FragmentManager fm) {
+    public LocationTypeFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
+        tabTitles[0] = context.getString(R.string.category_1);
+        tabTitles[1] = context.getString(R.string.category_2);
+        tabTitles[2] = context.getString(R.string.category_3);
+        tabTitles[3] = context.getString(R.string.category_4);
     }
 
     @Override
