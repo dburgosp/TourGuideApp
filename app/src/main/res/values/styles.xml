@@ -2,22 +2,28 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/secondaryBackgroundColor</item>
+        <item name="colorPrimaryDark">@color/primaryBackgroundColor</item>
+        <item name="colorAccent">@color/secondaryTextColor</item>
+    </style>
+
+    <style name="AppTheme.NoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="MainLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">#111111</item>
-        <item name="android:padding">2dp</item>
+        <item name="android:background">@color/primaryBackgroundColor</item>
+        <item name="android:padding">@dimen/tinyMargin</item>
     </style>
 
     <style name="MainTitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingTop">@dimen/minMargin</item>
         <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:textSize">@dimen/mainTitleTextSize</item>
         <item name="android:textStyle">bold</item>
@@ -26,17 +32,14 @@
     <style name="MainSubtitle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:paddingBottom">@dimen/minMargin</item>
         <item name="android:textColor">@color/secondaryTextColor</item>
         <item name="android:textSize">@dimen/mainSubtitleTextSize</item>
     </style>
 
     <style name="MainCategoryLayout">
-        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">2dp</item>
-        <item name="android:layout_weight">1</item>
-        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
         <item name="android:gravity">center</item>
         <item name="android:orientation">vertical</item>
     </style>
@@ -44,9 +47,9 @@
     <style name="MainCategoryLayoutLand">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:layout_margin">1dp</item>
+        <item name="android:layout_margin">@dimen/tinyMargin</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:background">@color/backgroundColor</item>
+        <item name="android:background">@color/secondaryBackgroundColor</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:orientation">horizontal</item>
     </style>
@@ -60,7 +63,7 @@
 
     <style name="MainCategoryImageLand">
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:scaleType">fitStart</item>
     </style>
@@ -71,7 +74,9 @@
         <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/primaryTextColor</item>
-        <item name="android:textSize">@dimen/mainCategoryTextSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
     </style>
 
     <style name="MainCategoryTitleLand">
@@ -80,5 +85,33 @@
         <item name="android:layout_weight">1</item>
         <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:textSize">@dimen/mainCategoryTextSize</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="location_info_relativelayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/minMargin</item>
+        <item name="android:paddingLeft">@dimen/mediumMargin</item>
+        <item name="android:paddingRight">@dimen/mediumMargin</item>
+        <item name="android:paddingTop">@dimen/minMargin</item>
+    </style>
+
+    <style name="location_info_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="location_info_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginEnd">@dimen/maxMargin</item>
+        <item name="android:layout_marginStart">@dimen/minMargin</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
     </style>
 </resources>
